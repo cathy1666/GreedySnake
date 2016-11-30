@@ -576,7 +576,7 @@ void CollisionDetect()
 		case 'a':
 		case 'b':
 		case 'g':
-			score += 10;
+			score += 1;
 			map[snakeY[0]][snakeX[0]] = ' ';
 			NewFruit();
 			snakeX[snake_length + 1] = snakeX[snake_length];

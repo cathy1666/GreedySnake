@@ -10,7 +10,7 @@
 
 char map[WIN_HEIGHT][WIN_WIDTH];
 
-enum FruitType { ORANGE = 0, STRAWBERRY = 1, APPLE = 2, BANANA = 3  };
+enum FruitType { ORANGE = 0, STRAWBERRY = 1, APPLE = 2, BANANA = 3, GRAPE = 4};
 enum Direction { UP = 0, DOWN = 1, LEFT = 2, RIGHT = 3 };
 
 //enum Direction head_dir = RIGHT; ###############
@@ -26,6 +26,7 @@ int REFRESH_TIMER = 380;
 /* you may have to change the include to <glut.h> or
 elsewhere depending on where it is stored on your system */
 
+//-------------------------------------------------------------------------------
 
 void DrawCircle(float x, float y, float r)
 {
@@ -86,14 +87,26 @@ void DrawOrange(float x, float y)
 	x += 0.5;
 	y += 0.5;
 
+	//head
+	glColor3ub(128, 64, 64);
+	glBegin(GL_POLYGON);
+	glVertex2f(x + 0.0, y + 0.5);
+	glVertex2f(x + 0.0, y + 0.6);
+	glVertex2f(x + 0.1, y + 0.8);
+	glVertex2f(x + 0.2, y + 0.85);
+	glVertex2f(x + 0.25, y + 0.8);
+	glVertex2f(x + 0.1, y + 0.7);
+	glVertex2f(x + 0.1, y + 0.5);
+	glEnd();
+	
 	//leaf
-	glColor3ub(0, 150, 0);
+	glColor3ub(0, 160, 0);
 	glBegin(GL_POLYGON);
 	glVertex2f(x - 0.4, y + 0.9);
 	glVertex2f(x - 0.1, y + 0.8);
 	glVertex2f(x, y + 0.5);
 	glEnd();
-	glColor3ub(0, 130, 0);
+	glColor3ub(0, 120, 0);
 	glBegin(GL_POLYGON);
 	glVertex2f(x - 0.4, y + 0.9);
 	glVertex2f(x - 0.3, y + 0.6);
@@ -109,33 +122,6 @@ void DrawOrange(float x, float y)
 	glVertex2f(x + 0.1, y + 0.3);
 	glVertex2f(x + 0.3, y + 0.1);
 	glEnd();
-#if 0
-	x += 0.5;
-	y += 0.5;
-	//head
-	glColor3ub(128, 64, 64);
-	glBegin(GL_POLYGON);
-	glVertex2f(x - 0.1, y);
-	glVertex2f(x - 0.1, y + 0.9);
-	glVertex2f(x, y + 1.0);
-	glVertex2f(x + 0.1, y + 0.9);
-	glVertex2f(x + 0.1, y);
-	glEnd();
-
-	//leaf
-	glColor3ub(0, 128, 0);
-	glBegin(GL_POLYGON);
-	glVertex2f(x - 0.1, y + 0.6);
-	glVertex2f(x - 0.2, y + 0.8);
-	glVertex2f(x - 0.5, y + 1.0);
-	glVertex2f(x - 0.4, y + 0.8);
-	glVertex2f(x - 0.1, y + 0.6);
-	glEnd();
-
-	//pulp
-	glColor3ub(255, 128, 0);
-	DrawCircle(x, y, 0.6);
-#endif
 }
 void DrawStrawberry(float x, float y)
 {
@@ -145,13 +131,13 @@ void DrawStrawberry(float x, float y)
 	//leaf
 	glColor3ub(0, 130, 0);
 	glBegin(GL_POLYGON);
-	glVertex2f(x - 0.25, y + 0.5);
-	glVertex2f(x - 0.25, y + 0.75);
+	glVertex2f(x - 0.3, y + 0.5);
+	glVertex2f(x - 0.3, y + 0.75);
 	glVertex2f(x - 0.1 , y + 0.65);
 	glVertex2f(x       , y + 0.75);
 	glVertex2f(x + 0.1 , y + 0.65);
-	glVertex2f(x + 0.25, y + 0.75);
-	glVertex2f(x + 0.25, y + 0.5);
+	glVertex2f(x + 0.3, y + 0.75);
+	glVertex2f(x + 0.3, y + 0.5);
 	glEnd();
 
 	//pulp
@@ -169,11 +155,12 @@ void DrawStrawberry(float x, float y)
 	glEnd();
 	glColor3ub(200, 40, 60);
 	glBegin(GL_POINTS);
-	glVertex2f(x - 0.2, y + 0.2);
-	glVertex2f(x      , y + 0.2);
-	glVertex2f(x + 0.2, y + 0.2);
+	glVertex2f(x - 0.2 , y + 0.2);
+	glVertex2f(x       , y + 0.2);
+	glVertex2f(x + 0.2 , y + 0.2);
 	glVertex2f(x - 0.12, y);
 	glVertex2f(x + 0.12, y);
+	glVertex2f(x       , y - 0.2);
 	glEnd();
 
 #if 0
@@ -217,50 +204,87 @@ void DrawStrawberry(float x, float y)
 	glPopMatrix();
 #endif
 }
-void DrawApple(float x, float y)
+void DrawGrape(float x, float y)
 {
 	x += 0.5;
 	y += 0.5;
 
-	glPushMatrix();
-	
-	//
-	glColor3f(0.0f, 0.2f, 0.0f);
-	DrawArc(x + 0.64, y + 3.6, 220 * PI / 180, 250 * PI / 180, PI / 180, 2.4, 1);
-	DrawArc(x - 1.76, y - 0.4, 40 * PI / 180, 70 * PI / 180, PI / 180, 2.4, 1);
-	
+	//head
+	x -= 0.05;
+	y -= 0.1;
+	glColor3ub(128, 64, 64);
+	glBegin(GL_POLYGON);
+	glVertex2f(x + 0.0, y + 0.5);
+	glVertex2f(x + 0.0, y + 0.6);
+	glVertex2f(x + 0.1, y + 0.8);
+	glVertex2f(x + 0.2, y + 0.85);
+	glVertex2f(x + 0.25, y + 0.8);
+	glVertex2f(x + 0.1, y + 0.7);
+	glVertex2f(x + 0.1, y + 0.5);
+	glEnd();
+	x += 0.05;
+	y += 0.1;
+
+	//leaf
+	x += 0.05;
+	y += 0.05;
+	glColor3ub(0, 160, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(x + 0.1,y + 0.9);
+	glVertex2f(x + 0.4,y + 0.9);
+	glVertex2f(x + 0.1,y + 0.6);
+	glEnd();
+	glBegin(GL_POLYGON);
+	glVertex2f(x - 0.1, y + 0.9);
+	glVertex2f(x + 0.1, y + 0.75);
+	glVertex2f(x + 0.1, y + 0.6);
+	glVertex2f(x - 0.1, y + 0.6);
+	glEnd();
+	glColor3ub(0, 120, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(x + 0.4, y + 0.9);
+	glVertex2f(x + 0.4, y + 0.6);
+	glVertex2f(x + 0.1, y + 0.6);
+	glEnd();
+	glBegin(GL_POLYGON);
+	glVertex2f(x + 0.1,	y + 0.6);
+	glVertex2f(x + 0.25,y + 0.6);
+	glVertex2f(x + 0.4, y + 0.4);
+	glVertex2f(x + 0.1, y + 0.4);
+	glEnd();
+	x -= 0.05;
+	y -= 0.05;
+
 	//pulp
-	glColor3f(0.8, 0.0, 0.0);
-	DrawCircle(x, y, 0.6);
-
-	//
-	glColor3f(0.5f, 0.20f, 0.05f);
-	DrawArc(x + 1.28, y + 0.64, 120 * PI / 180, PI, PI / 180, 1.28, 0);
-	DrawArc(x, y + 1.76, 250 * PI / 180, 290 * PI / 180, PI / 180, 1.2, 0);
-
-	glPopMatrix();
+	glColor3ub(150, 70, 200);
+	DrawCircle(x - 0.4,	y + 0.25,	 0.2);
+	DrawCircle(x,		y + 0.25,	 0.2);
+	DrawCircle(x + 0.4,	y + 0.25,	 0.2);
+	DrawCircle(x - 0.2,	y - 0.05,	 0.2);
+	DrawCircle(x + 0.2,	y - 0.05,	 0.2);
+	DrawCircle(x,		y - 0.35,	 0.2);
 }
 void DrawBanana(float x, float y)
 {
 	x += 0.5;
 	y += 0.5;
 
-	glColor3ub(200, 40, 60);
+	glColor3ub(255, 200, 0);
 	glBegin(GL_POLYGON);
-	glVertex2f(x + 0.3, y + 0.6);
-	glVertex2f(x, y + 0.2);
-	glVertex2f(x + 0.2, y + 0.2);
-	glVertex2f(x - 0.12, y);
-	glVertex2f(x + 0.12, y);
-	glVertex2f(x - 0.2, y + 0.2);
-	glVertex2f(x, y + 0.2);
-	glVertex2f(x + 0.2, y + 0.2);
-	glVertex2f(x - 0.12, y);
-	glVertex2f(x + 0.12, y);
-	glVertex2f(x - 0.2, y + 0.2);
-	glVertex2f(x, y + 0.2);
-	glVertex2f(x + 0.2, y + 0.2);
-	glVertex2f(x - 0.12, y);
+	glVertex3f(x + 0.35f,	y + 0.25f,	0.0f);
+	glVertex3f(x + 0.35f,	y + 0.6f,	 0.0f);
+	glVertex3f(x + 0.65f,	y + 0.4f,	 0.0f);
+	glVertex3f(x + 0.5f,	y + 0.3f,	 0.0f);
+	glVertex3f(x + 0.45f,	y + 0.1f,	 0.0f);
+	glVertex3f(x + 0.4f,	y - 0.2f,	 0.0f);
+	glVertex3f(x + 0.1f,	y - 0.4f,	 0.0f);
+	glVertex3f(x - 0.35f,	y - 0.5f,	 0.0f);
+	glVertex3f(x - 0.45f,	y - 0.4f,	 0.0f);
+	glVertex3f(x - 0.5f,	y - 0.2f,	 0.0f);
+	glVertex3f(x - 0.45f,	y - 0.3f,	 0.0f);
+	glVertex3f(x - 0.3f,	y - 0.2f,	 0.0f);
+	glVertex3f(x,			y - 0.2f,	 0.0f);
+	glVertex3f(x + 0.2f,	y + 0.15f,	0.0f);
 	glEnd();
 
 #if 0
@@ -299,6 +323,28 @@ void DrawBanana(float x, float y)
 	}
 	glPopMatrix();
 #endif
+}
+void DrawApple(float x, float y)
+{
+	x += 0.5;
+	y += 0.5;
+
+	glPushMatrix();
+
+	glColor3f(0.0f, 0.2f, 0.0f);
+	DrawArc(x + 0.64, y + 3.6, 220 * PI / 180, 250 * PI / 180, PI / 180, 2.4, 1);
+	DrawArc(x - 1.76, y - 0.4, 40 * PI / 180, 70 * PI / 180, PI / 180, 2.4, 1);
+
+	//pulp
+	glColor3f(0.8, 0.0, 0.0);
+	DrawCircle(x, y, 0.6);
+
+	//
+	glColor3f(0.5f, 0.20f, 0.05f);
+	DrawArc(x + 1.28, y + 0.64, 120 * PI / 180, PI, PI / 180, 1.28, 0);
+	DrawArc(x, y + 1.76, 250 * PI / 180, 290 * PI / 180, PI / 180, 1.2, 0);
+
+	glPopMatrix();
 }
 
 void DrawGrass(float x, float y)
@@ -403,7 +449,7 @@ void DrawSnackBody(float x, float y)
 void DrawGrid()
 {
 	int i;
-	glColor3ub(0, 255, 0);
+	glColor3ub(200, 200, 200);
 
 	glBegin(GL_LINES);
 	for (i = 0; i < WIN_WIDTH; i++)
@@ -419,7 +465,7 @@ void DrawGrid()
 	glEnd();
 }
 
-
+//-------------------------------------------------------------------------------
 
 void NewFruit()
 {
@@ -431,20 +477,23 @@ void NewFruit()
 		fruitX = rand() % WIN_WIDTH;
 		fruitY = rand() % WIN_HEIGHT;
 	} while (fruitX == snakeX[0] || fruitY == snakeY[0] || map[fruitY][fruitX] != ' ');
-	fruit_type = rand() % 4;//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	fruit_type = rand() % 5;//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	switch (fruit_type)
 	{
 		case ORANGE:
-			map[fruitY][fruitX] = 'O';
+			map[fruitY][fruitX] = 'o';
 			break;
 		case STRAWBERRY:
-			map[fruitY][fruitX] = 'S';
+			map[fruitY][fruitX] = 's';
 			break;
 		case APPLE:
-			map[fruitY][fruitX] = 'A';
+			map[fruitY][fruitX] = 'a';
 			break;
 		case BANANA:
-			map[fruitY][fruitX] = 'B';
+			map[fruitY][fruitX] = 'b';
+			break;
+		case GRAPE:
+			map[fruitY][fruitX] = 'g';
 			break;
 	}
 	printf("%d (%d , %d)\n",fruit_type , fruitX, fruitY);
@@ -522,10 +571,11 @@ void CollisionDetect()
 		case 'G':
 		case ' ':
 			break;
-		case 'O':
-		case 'S':
-		case 'A':
-		case 'B':
+		case 'o':
+		case 's':
+		case 'a':
+		case 'b':
+		case 'g':
 			score += 10;
 			map[snakeY[0]][snakeX[0]] = ' ';
 			NewFruit();
@@ -557,47 +607,64 @@ void display()
 	glClear(GL_COLOR_BUFFER_BIT);  /*clear the window */
 	DrawGrid();
 	//#####################
-	DrawStrawberry(3, 5);
-	DrawBanana(5, 5);
-	DrawOrange(3, 3);
-	DrawApple(5, 3);
+	//DrawGrape(8, 8);
+	//DrawStrawberry(3, 5);
+	//DrawBanana(8, 8);
+	//DrawOrange(3, 3);
+	//DrawApple(5, 3);
 	//####################
 
 	if (gameover == 0)
-	{
-		for (j = 0; j < WIN_HEIGHT; j ++)
-			for (i = 0; i < WIN_WIDTH; i ++)
+	{ 
+		for (j = 0; j < WIN_HEIGHT; j++)
+		{
+			for (i = 0; i < WIN_WIDTH; i++)
+			{
 				switch (map[j][i])
 				{
 				case '+':
 					DrawBrick(i, j, 1);
 					break;
-				case 'O':
-					DrawOrange(i, j);
-					break;
-				case 'S':
-					DrawStrawberry(i, j);
-					break;
-				case 'A':
-					//DrawApple(i, j);
-					DrawOrange(i, j);
-					break;
-				case 'B':
-					//DrawBanana(i, j);
-					DrawOrange(i, j);
-					break;
 				case 'G':
 					DrawGrass(i, j);
 					break;
 				}
+			}
+		}
+		for (j = 0; j < WIN_HEIGHT; j++)
+		{
+			for (i = 0; i < WIN_WIDTH; i++)
+			{
+				switch (map[j][i])
+				{
+				case 'o':
+					DrawOrange(i, j);
+					break;
+				case 's':
+					DrawStrawberry(i, j);
+					break;
+				case 'a':
+					//DrawApple(i, j);
+					DrawOrange(i, j);
+					break;
+				case 'b':
+					//DrawBanana(i, j);
+					DrawOrange(i, j);
+					break;
+				case 'g':
+					DrawGrape(i, j);
+					break;
+				}
+			}
+		}
 		for (i = 1; i <= snake_length; i++)
 			DrawSnackBody(snakeX[i], snakeY[i]);
 		DrawSnack(snakeX[0], snakeY[0]);
 	}
 	if (gameover)
 	{
-		glutChangeToMenuEntry(1, "Restart", 3);
-		glutAttachMenu(GLUT_RIGHT_BUTTON);
+		//glutChangeToMenuEntry(1, "Restart", 3);
+		//glutAttachMenu(GLUT_RIGHT_BUTTON);
 		for (j = 0; j < WIN_HEIGHT; j += 1)
 			for (i = 0; i < WIN_WIDTH; i += 1)
 				if (map[j][i] == '+')
@@ -762,7 +829,6 @@ void Mouse(int btn, int state, int x, int y)
 	}
 #endif
 }
-
 void MyMenu(int id)
 {	
 	pause = 1;

@@ -54,7 +54,7 @@ void DrawArc(double x, double y, double start_angle, double end_angle, double de
 	for (i = start_angle; i <= end_angle; i += delta_angle)
 	{
 		double vx = x + radius * cos(i);
-		double vy = y + radius*sin(i);
+		double vy = y + radius * sin(i);
 		glVertex2d(vx, vy);
 	}
 	glEnd();
@@ -85,6 +85,33 @@ void DrawOrange(float x, float y)
 {
 	x += 0.5;
 	y += 0.5;
+
+	//leaf
+	glColor3ub(0, 150, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(x - 0.4, y + 0.9);
+	glVertex2f(x - 0.1, y + 0.8);
+	glVertex2f(x, y + 0.5);
+	glEnd();
+	glColor3ub(0, 130, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(x - 0.4, y + 0.9);
+	glVertex2f(x - 0.3, y + 0.6);
+	glVertex2f(x, y + 0.5);
+	glEnd();
+
+	//pulp
+	glColor3ub(255, 128, 0);
+	DrawCircle(x, y, 0.5);
+	glColor3ub(200, 100, 0);
+	glBegin(GL_POINTS);
+	glVertex2f(x, y + 0.1);
+	glVertex2f(x + 0.1, y + 0.3);
+	glVertex2f(x + 0.3, y + 0.1);
+	glEnd();
+#if 0
+	x += 0.5;
+	y += 0.5;
 	//head
 	glColor3ub(128, 64, 64);
 	glBegin(GL_POLYGON);
@@ -108,15 +135,57 @@ void DrawOrange(float x, float y)
 	//pulp
 	glColor3ub(255, 128, 0);
 	DrawCircle(x, y, 0.6);
+#endif
 }
 void DrawStrawberry(float x, float y)
 {
+	x += 0.5;
+	y += 0.5;
+
+	//leaf
+	glColor3ub(0, 130, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(x - 0.25, y + 0.5);
+	glVertex2f(x - 0.25, y + 0.75);
+	glVertex2f(x - 0.1 , y + 0.65);
+	glVertex2f(x       , y + 0.75);
+	glVertex2f(x + 0.1 , y + 0.65);
+	glVertex2f(x + 0.25, y + 0.75);
+	glVertex2f(x + 0.25, y + 0.5);
+	glEnd();
+
+	//pulp
+	glColor3ub(255, 50, 70);
+	DrawCircle(x - 0.25, y + 0.25, 0.25);
+	DrawCircle(x + 0.25, y + 0.25, 0.25);
+	DrawCircle(x       , y - 0.3 , 0.20);
+	glBegin(GL_POLYGON);
+	glVertex2f(x - 0.5 , y + 0.22);
+	glVertex2f(x - 0.25, y + 0.5);
+	glVertex2f(x + 0.25, y + 0.5);
+	glVertex2f(x + 0.5 , y + 0.22);
+	glVertex2f(x + 0.25, y - 0.3);
+	glVertex2f(x - 0.25, y - 0.3);
+	glEnd();
+	glColor3ub(200, 40, 60);
+	glBegin(GL_POINTS);
+	glVertex2f(x - 0.2, y + 0.2);
+	glVertex2f(x      , y + 0.2);
+	glVertex2f(x + 0.2, y + 0.2);
+	glVertex2f(x - 0.12, y);
+	glVertex2f(x + 0.12, y);
+	glEnd();
+
+#if 0
 	glPushMatrix();
+
 	glTranslatef(x, y, 0);
 	glScalef(0.8, 0.8, 1.0);
 	glTranslatef(-x, -y, 0);
+
 	glColor3f(0.0, 0.65, 0.0);
 	DrawArc(x, y + 0.8, 0, PI, PI / 180, 1.16, 1);
+
 	glColor3f(0.6, 0.0, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex3f(x - 1.2f, y + 1.2f, 0.0f);
@@ -146,25 +215,59 @@ void DrawStrawberry(float x, float y)
 	glVertex3f(x - 0.16f, y + 1.6f, 0.0f);
 	glEnd();
 	glPopMatrix();
+#endif
 }
 void DrawApple(float x, float y)
 {
+	x += 0.5;
+	y += 0.5;
+
 	glPushMatrix();
+	
+	//
 	glColor3f(0.0f, 0.2f, 0.0f);
-	DrawArc(x + 0.64, y + 3.6, 220 * PI / 180, 250 * PI / 180, PI / 180, 2.4, 0);
-	DrawArc(x - 1.76, y - 0.4, 40 * PI / 180, 70 * PI / 180, PI / 180, 2.4, 0);
+	DrawArc(x + 0.64, y + 3.6, 220 * PI / 180, 250 * PI / 180, PI / 180, 2.4, 1);
+	DrawArc(x - 1.76, y - 0.4, 40 * PI / 180, 70 * PI / 180, PI / 180, 2.4, 1);
+	
+	//pulp
 	glColor3f(0.8, 0.0, 0.0);
-	DrawCircle(x, y, 1.2);
+	DrawCircle(x, y, 0.6);
+
+	//
 	glColor3f(0.5f, 0.20f, 0.05f);
 	DrawArc(x + 1.28, y + 0.64, 120 * PI / 180, PI, PI / 180, 1.28, 0);
 	DrawArc(x, y + 1.76, 250 * PI / 180, 290 * PI / 180, PI / 180, 1.2, 0);
+
 	glPopMatrix();
 }
 void DrawBanana(float x, float y)
 {
+	x += 0.5;
+	y += 0.5;
+
+	glColor3ub(200, 40, 60);
+	glBegin(GL_POLYGON);
+	glVertex2f(x + 0.3, y + 0.6);
+	glVertex2f(x, y + 0.2);
+	glVertex2f(x + 0.2, y + 0.2);
+	glVertex2f(x - 0.12, y);
+	glVertex2f(x + 0.12, y);
+	glVertex2f(x - 0.2, y + 0.2);
+	glVertex2f(x, y + 0.2);
+	glVertex2f(x + 0.2, y + 0.2);
+	glVertex2f(x - 0.12, y);
+	glVertex2f(x + 0.12, y);
+	glVertex2f(x - 0.2, y + 0.2);
+	glVertex2f(x, y + 0.2);
+	glVertex2f(x + 0.2, y + 0.2);
+	glVertex2f(x - 0.12, y);
+	glEnd();
+
+#if 0
 	int i;
 	float j, k, m, n;
 	glPushMatrix();
+
 	glColor3f(0.5f, 0.20f, 0.05f);
 	glBegin(GL_POLYGON);
 	glVertex3f(x - 1.07f, y + 0.92f, 0.0f);
@@ -172,10 +275,11 @@ void DrawBanana(float x, float y)
 	glVertex3f(x + 1.28f, y + 0.44f, 0.0f);
 	glVertex3f(x - 1.07f, y + 0.44f, 0.0f);
 	glEnd();
+
 	DrawCircle(x - 1.07f, y + 0.68, 0.24);
 	DrawCircle(x + 1.28f, y + 0.68, 0.24);
 	glColor3f(1.0, 0.8, 0.0);
-	for (i = 0; i<5; i++)
+	for (i = 0; i<4; i++)
 	{
 		if (i % 2 == 0)
 			glColor3f(1.0, 1.0, 0.0);
@@ -194,10 +298,13 @@ void DrawBanana(float x, float y)
 		DrawCircle(x - 1.1f + j, y - 1.14, 0.28);
 	}
 	glPopMatrix();
+#endif
 }
 
 void DrawGrass(float x, float y)
 {
+	y += 0.5;
+
 	glPushMatrix();
 	glBegin(GL_TRIANGLES);
 	glColor3f(0.0, 0.7, 0.0);
@@ -287,8 +394,11 @@ void DrawSnack(float x, float y)
 }
 void DrawSnackBody(float x, float y)
 {
+	x += 0.5;
+	y += 0.5;
+
 	glColor3ub(0, 85, 0);
-	DrawCircle(x + 0.5, y + 0.5, 0.6);
+	DrawCircle(x, y, 0.6);
 }
 void DrawGrid()
 {
@@ -309,6 +419,8 @@ void DrawGrid()
 	glEnd();
 }
 
+
+
 void NewFruit()
 {
 	int fruitX, fruitY;
@@ -322,20 +434,20 @@ void NewFruit()
 	fruit_type = rand() % 4;//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	switch (fruit_type)
 	{
-	case ORANGE:
-		map[fruitY][fruitX] = 'O';
-		break;
-	case STRAWBERRY:
-		map[fruitY][fruitX] = 'S';
-		break;
-	case APPLE:
-		map[fruitY][fruitX] = 'A';
-		break;
-	case BANANA:
-		map[fruitY][fruitX] = 'B';
-		break;
+		case ORANGE:
+			map[fruitY][fruitX] = 'O';
+			break;
+		case STRAWBERRY:
+			map[fruitY][fruitX] = 'S';
+			break;
+		case APPLE:
+			map[fruitY][fruitX] = 'A';
+			break;
+		case BANANA:
+			map[fruitY][fruitX] = 'B';
+			break;
 	}
-	printf("(%d , %d)\n", fruitX, fruitY);
+	printf("%d (%d , %d)\n",fruit_type , fruitX, fruitY);
 }
 void ReadMap(char* map_name)
 {
@@ -351,9 +463,12 @@ void ReadMap(char* map_name)
 		exit(1);
 	}
 
-	for (j = WIN_HEIGHT - 1; j >= 0; j -= 1) {
-		for (i = 0; i < WIN_WIDTH; i += 1) {
-			if ((ch = fgetc(mapp)) != EOF) {
+	for (j = WIN_HEIGHT - 1; j >= 0; j -= 1)
+	{
+		for (i = 0; i < WIN_WIDTH; i += 1) 
+		{
+			if ((ch = fgetc(mapp)) != EOF) 
+			{
 				map[j][i] = ch;
 			}
 		}
@@ -361,9 +476,13 @@ void ReadMap(char* map_name)
 	}
 	fclose(mapp);
 	for (i = 0; i < 5; i++)
+	{
 		NewFruit();
-	for (b = 0; b < WIN_HEIGHT; b++) {
-		for (a = 0; a < WIN_WIDTH; a++) {
+	}
+	for (b = 0; b < WIN_HEIGHT; b++) 
+	{
+		for (a = 0; a < WIN_WIDTH; a++) 
+		{
 			printf("%c", map[b][a]);
 		}
 		printf("\n");
@@ -390,7 +509,7 @@ void NewGame()
 void CollisionDetect()
 {
 	int i;
-	if (!pause)
+	if (pause == 0)
 	{
 		for (i = 2; i < snake_length; i++)
 			if (snakeX[0] == snakeX[i] && snakeY[0] == snakeY[i])
@@ -413,7 +532,7 @@ void CollisionDetect()
 			snakeX[snake_length + 1] = snakeX[snake_length];
 			snakeY[snake_length + 1] = snakeY[snake_length];
 			snake_length++;
-			REFRESH_TIMER *= 0.8;
+			//REFRESH_TIMER *= 0.8; //add speed
 			break;
 		}
 	}
@@ -437,10 +556,17 @@ void display()
 	FILE *mapp = NULL;
 	glClear(GL_COLOR_BUFFER_BIT);  /*clear the window */
 	DrawGrid();
-	if (!pause && !gameover)
+	//#####################
+	DrawStrawberry(3, 5);
+	DrawBanana(5, 5);
+	DrawOrange(3, 3);
+	DrawApple(5, 3);
+	//####################
+
+	if (gameover == 0)
 	{
-		for (j = 0; j < WIN_HEIGHT; j += 1)
-			for (i = 0; i < WIN_WIDTH; i += 1)
+		for (j = 0; j < WIN_HEIGHT; j ++)
+			for (i = 0; i < WIN_WIDTH; i ++)
 				switch (map[j][i])
 				{
 				case '+':
@@ -450,16 +576,18 @@ void display()
 					DrawOrange(i, j);
 					break;
 				case 'S':
-					//DrawStrawberry(i, j);
+					DrawStrawberry(i, j);
 					break;
 				case 'A':
 					//DrawApple(i, j);
+					DrawOrange(i, j);
 					break;
 				case 'B':
 					//DrawBanana(i, j);
+					DrawOrange(i, j);
 					break;
 				case 'G':
-					//DrawGrass(i, j);
+					DrawGrass(i, j);
 					break;
 				}
 		for (i = 1; i <= snake_length; i++)
@@ -468,7 +596,7 @@ void display()
 	}
 	if (gameover)
 	{
-		glutChangeToMenuEntry(1, "重新開始", 3);
+		glutChangeToMenuEntry(1, "Restart", 3);
 		glutAttachMenu(GLUT_RIGHT_BUTTON);
 		for (j = 0; j < WIN_HEIGHT; j += 1)
 			for (i = 0; i < WIN_WIDTH; i += 1)
@@ -552,7 +680,7 @@ void display()
 }
 void TimerFunction(int value)
 {
-	if (!pause && !gameover)
+	if (pause == 0 && gameover == 0)
 	{
 		int i;
 		for (i = snake_length; i > 0; i--)
@@ -583,39 +711,75 @@ void TimerFunction(int value)
 }
 void SpecKeyboard(int key, int x, int y)
 {
-	if (!pause && !gameover)
+	if (gameover == 0)
 	{
-		switch (key) {
-		case GLUT_KEY_DOWN:
-			if (snake_length == 0 || head_dir != UP)
-				head_dir = DOWN;
-			break;
-		case GLUT_KEY_UP:
-			if (snake_length == 0 || head_dir != DOWN)
-				head_dir = UP;
-			break;
-		case GLUT_KEY_LEFT:
-			if (snake_length == 0 || head_dir != RIGHT)
-				head_dir = LEFT;
-			break;
-		case GLUT_KEY_RIGHT:
-			if (snake_length == 0 || head_dir != LEFT)
-				head_dir = RIGHT;
-			break;
+		if (pause == 0) 
+		{
+			switch (key) {
+			case GLUT_KEY_DOWN:
+				if (snake_length == 0 || head_dir != UP)
+					head_dir = DOWN;
+				break;
+			case GLUT_KEY_UP:
+				if (snake_length == 0 || head_dir != DOWN)
+					head_dir = UP;
+				break;
+			case GLUT_KEY_LEFT:
+				if (snake_length == 0 || head_dir != RIGHT)
+					head_dir = LEFT;
+				break;
+			case GLUT_KEY_RIGHT:
+				if (snake_length == 0 || head_dir != LEFT)
+					head_dir = RIGHT;
+				break;
+			}
+		}		
+		switch (key) 
+		{
+			case GLUT_KEY_PAGE_UP:
+				pause = 1;
+				printf("\nGLUT_KEY_PAGE_UP PAUSE = %d\n", pause);
+				break;
+			case GLUT_KEY_PAGE_DOWN:
+				pause = 0;
+				printf("\nGLUT_KEY_PAGE_DOWN PAUSE = %d\n", pause);
+				break;
 		}
 	}
 }
 void Mouse(int btn, int state, int x, int y)
 {
-	if (btn == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) { pause = 1; printf("\nPAUSE@ = %d\n", pause); }
+#if 0
+	if (btn == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+	{ 
+		pause = 1; 
+		printf("\nPAUSE@ = %d\n", pause); 
+	}
+	if (btn == GLUT_MIDDLE_BUTTON && state == GLUT_DOWN)
+	{
+		pause = 0;
+		printf("\nPAUSE@ = %d\n", pause);
+	}
+#endif
 }
 
 void MyMenu(int id)
-{
+{	
 	pause = 1;
-	if (id == 1) { pause = 0; }
-	else if (id == 2) { exit(1); }
-	else if (id == 3) { NewGame(); }
+	printf("\nMyMenu start\nPAUSE@@@@ = %d\n", pause);
+	switch (id)
+	{
+		case 1:
+			break;
+		case 2:
+			exit(1);
+			break;
+		case 3:
+			NewGame();
+			break;
+	}
+	pause = 0;
+	printf("\nMyMenu end\nPAUSE@@@@ = %d\n", pause);
 }
 int main(int argc, char** argv)
 {
@@ -624,18 +788,25 @@ int main(int argc, char** argv)
 	/* standard GLUT initialization */
 	ReadMap("map.txt");
 	glutInit(&argc, argv);
+
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB); /* default, not needed */
-	glutInitWindowSize(960, 520); /* 500 x 500 pixel window */
+	glutInitWindowSize(960, 520); /* 960 x 520 pixel window */
 	glutInitWindowPosition(300, 100); /* place window top left on display */
 	glutCreateWindow("Greedy Snake"); /* window title */
 	glutDisplayFunc(display); /* display callback invoked when window opened */
+
 	glutMouseFunc(Mouse);
+
 	glutCreateMenu(MyMenu);
 	glutAddMenuEntry("Go on", 1);
 	glutAddMenuEntry("Esc", 2);
+	glutAddMenuEntry("Rstart", 3);
 	glutAttachMenu(GLUT_RIGHT_BUTTON);
+
 	glutTimerFunc(REFRESH_TIMER, TimerFunction, 1);
+
 	glutSpecialFunc(SpecKeyboard);
+
 	myinit(); /* set attributes */
 	glutMainLoop(); /* enter event loop */
 }

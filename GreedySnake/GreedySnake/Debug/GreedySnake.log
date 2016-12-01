@@ -1,2 +1,230 @@
-﻿  GreedySnake.vcxproj -> C:\Users\Cathy\Documents\GitHub\GreedySnake\GreedySnake\Debug\GreedySnake.exe
+﻿  main.cpp
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(93): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(94): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(95): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(96): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(97): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(98): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(99): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(105): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(106): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(107): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(111): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(112): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(113): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(121): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(122): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(123): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(134): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(135): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(136): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(137): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(138): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(139): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(140): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(145): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(146): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(147): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(147): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(149): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(150): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(151): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(152): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(153): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(154): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(158): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(159): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(160): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(161): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(162): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(163): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(213): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(214): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(217): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(218): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(219): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(220): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(221): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(222): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(223): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(225): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(226): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(229): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(230): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(233): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(234): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(235): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(238): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(239): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(240): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(241): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(245): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(246): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(247): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(250): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(251): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(252): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(253): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(255): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(256): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(260): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(260): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(261): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(261): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(262): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(262): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(263): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(263): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(264): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(264): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(265): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(265): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(339): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(340): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(356): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(357): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(359): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(360): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(361): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(363): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(364): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(366): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(367): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(368): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(370): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(371): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(373): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(374): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(375): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(386): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(387): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(388): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(394): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(395): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(396): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(401): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(402): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(403): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(404): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(405): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(406): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(407): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(408): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(409): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(410): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(411): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(412): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(426): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(427): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(428): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(429): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(430): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(431): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(438): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(438): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(439): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(439): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(446): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(447): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(448): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(449): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(450): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(451): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(458): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(458): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(459): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(459): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(466): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(467): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(468): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(469): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(470): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(471): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(478): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(478): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(479): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(479): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(486): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(487): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(488): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(489): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(490): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(491): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(498): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(498): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(499): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(499): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(551): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(561): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(562): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(566): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(567): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(579): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(611): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(730): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(733): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(745): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(748): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(752): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(756): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(759): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(765): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(766): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(775): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(795): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(796): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(799): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(821): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(822): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(825): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(838): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(839): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(842): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(779): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(780): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(781): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(782): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(783): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(784): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(785): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(786): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(787): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(788): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(805): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(806): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(807): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(808): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(809): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(810): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(811): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(812): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(813): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(814): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(831): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\cathy\documents\github\greedysnake\greedysnake\greedysnake\main.cpp(708): warning C4101: 'Num': unreferenced local variable
+  GreedySnake.vcxproj -> C:\Users\Cathy\Documents\GitHub\GreedySnake\GreedySnake\Debug\GreedySnake.exe
   GreedySnake.vcxproj -> C:\Users\Cathy\Documents\GitHub\GreedySnake\GreedySnake\Debug\GreedySnake.pdb (Full PDB)

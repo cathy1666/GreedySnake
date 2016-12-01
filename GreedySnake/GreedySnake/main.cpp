@@ -388,13 +388,28 @@ void DrawBrick(float x, float y, int color)
 	glVertex2f(x, y + 1.0);
 	glEnd();
 
-	glColor3ub(0, 0, 0);
-
+	glColor3ub(120, 50, 0);
 	glBegin(GL_LINE_LOOP);
 	glVertex2f(x, y);
 	glVertex2f(x + 1.0, y);
 	glVertex2f(x + 1.0, y + 1.0);
 	glVertex2f(x, y + 1.0);
+	glEnd();
+	x += 0.5;
+	y += 0.5;
+	glBegin(GL_LINES);
+	glVertex2f(x - 0.5,	 y - 0.2);
+	glVertex2f(x + 0.5,	 y - 0.2);
+	glVertex2f(x - 0.5,	 y + 0.2);
+	glVertex2f(x + 0.5,	 y + 0.2);
+	glVertex2f(x + 0.0,	 y + 0.5);
+	glVertex2f(x + 0.0,	 y + 0.2);
+	glVertex2f(x + 0.0,	 y - 0.2);
+	glVertex2f(x + 0.0,	 y - 0.5);
+	glVertex2f(x - 0.25, y + 0.2);
+	glVertex2f(x - 0.25, y - 0.2);
+	glVertex2f(x + 0.25, y + 0.2);
+	glVertex2f(x + 0.25, y - 0.2);
 	glEnd();
 }
 void DrawSnackHead(float x, float y, int dir)

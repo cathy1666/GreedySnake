@@ -397,14 +397,98 @@ void DrawBrick(float x, float y, int color)
 	glVertex2f(x, y + 1.0);
 	glEnd();
 }
-void DrawSnack(float x, float y)
+void DrawSnackHead(float x, float y, int dir)
 {
 	x += 0.5;
 	y += 0.5;
-	glColor3ub(0, 85, 0);//body
-	DrawCircle(x, y, 0.75);
+
+	switch(dir)
+	{
+	case UP:
+		//Tongue
+		glColor3ub(255, 0, 0);
+		glBegin(GL_LINES);
+		glVertex2f(x + 0.0, y + 0.7); 
+		glVertex2f(x + 0.0, y + 1.1); 
+		glVertex2f(x + 0.0, y + 1.1); 
+		glVertex2f(x + 0.2, y + 1.3); 
+		glVertex2f(x + 0.0, y + 1.1); 
+		glVertex2f(x - 0.2, y + 1.3); 
+		glEnd();
+		//head
+		glColor3ub(0, 120, 0);
+		DrawCircle(x, y, 0.75);
+		//Eyes
+		glColor3ub(0, 0, 0);
+		DrawCircle(x + 0.25, y + 0.25, 0.1);
+		DrawCircle(x - 0.25, y + 0.25, 0.1);
+		break;
+
+	case DOWN:
+		//Tongue
+		glColor3ub(255, 0, 0);
+		glBegin(GL_LINES);
+		glVertex2f(x + 0.0, y - 0.7);
+		glVertex2f(x + 0.0, y - 1.1);
+		glVertex2f(x + 0.0, y - 1.1);
+		glVertex2f(x + 0.2, y - 1.3);
+		glVertex2f(x + 0.0, y - 1.1);
+		glVertex2f(x - 0.2, y - 1.3);
+		glEnd();
+		//head
+		glColor3ub(0, 120, 0);
+		DrawCircle(x, y, 0.75);
+		//Eyes
+		glColor3ub(0, 0, 0);
+		DrawCircle(x + 0.25, y - 0.25, 0.1);
+		DrawCircle(x - 0.25, y - 0.25, 0.1);
+		break;
+
+	case LEFT:
+		//Tongue
+		glColor3ub(255, 0, 0);
+		glBegin(GL_LINES);
+		glVertex2f(x - 0.7, y + 0.0);
+		glVertex2f(x - 1.1, y + 0.0);
+		glVertex2f(x - 1.1, y + 0.0);
+		glVertex2f(x - 1.3, y + 0.2);
+		glVertex2f(x - 1.1, y + 0.0);
+		glVertex2f(x - 1.3, y - 0.2);
+		glEnd();
+		//head
+		glColor3ub(0, 120, 0);
+		DrawCircle(x, y, 0.75);
+		//Eyes
+		glColor3ub(0, 0, 0);
+		DrawCircle(x - 0.25, y + 0.25, 0.1);
+		DrawCircle(x - 0.25, y - 0.25, 0.1);
+		break;
+
+	case RIGHT:
+		//Tongue
+		glColor3ub(255, 0, 0);
+		glBegin(GL_LINES);
+		glVertex2f(x + 0.7, y + 0.0);
+		glVertex2f(x + 1.1, y + 0.0);
+		glVertex2f(x + 1.1, y + 0.0);
+		glVertex2f(x + 1.3, y + 0.2);
+		glVertex2f(x + 1.1, y + 0.0);
+		glVertex2f(x + 1.3, y - 0.2);
+		glEnd();
+		//head
+		glColor3ub(0, 120, 0);
+		DrawCircle(x, y, 0.75);
+		//Eyes
+		glColor3ub(0, 0, 0);
+		DrawCircle(x + 0.25, y + 0.25, 0.1);
+		DrawCircle(x + 0.25, y - 0.25, 0.1);
+		break;
+	}
+
+#if 0
+	//white eyes
 	glColor3ub(255, 255, 255);
-	glBegin(GL_POLYGON);//white eyes
+	glBegin(GL_POLYGON);
 	glVertex2f(x, y + 0.15);
 	glVertex2f(x - 0.1, y + 0.05);
 	glVertex2f(x - 0.4, y + 0.05);
@@ -420,10 +504,14 @@ void DrawSnack(float x, float y)
 	glVertex2f(x + 0.4, y + 0.05);
 	glVertex2f(x + 0.1, y + 0.05);
 	glEnd();
-	glColor3ub(0, 0, 0);//black eyes
+
+	//black eyes
+	glColor3ub(0, 0, 0);
 	DrawCircle(x - 0.25, y + 0.15, 0.15);
 	DrawCircle(x + 0.25, y + 0.15, 0.15);
-	glPointSize(2.0);//mouth
+
+	//Mouth
+	glPointSize(2.0);
 	glBegin(GL_POINTS);
 	glVertex2f(x - 0.45, y - 0.2);
 	glVertex2f(x - 0.4, y - 0.3);
@@ -437,13 +525,14 @@ void DrawSnack(float x, float y)
 	glVertex2f(x + 0.4, y - 0.3);
 	glVertex2f(x + 0.45, y - 0.2);
 	glEnd();
+#endif
 }
 void DrawSnackBody(float x, float y)
 {
 	x += 0.5;
 	y += 0.5;
 
-	glColor3ub(0, 85, 0);
+	glColor3ub(0, 120, 0);
 	DrawCircle(x, y, 0.6);
 }
 void DrawGrid()
@@ -659,7 +748,7 @@ void display()
 		}
 		for (i = 1; i <= snake_length; i++)
 			DrawSnackBody(snakeX[i], snakeY[i]);
-		DrawSnack(snakeX[0], snakeY[0]);
+		DrawSnackHead(snakeX[0], snakeY[0], head_dir);
 	}
 	if (gameover)
 	{

@@ -21,7 +21,7 @@ int snake_length = 0;// only body length
 int score = 0;
 int gameover = 0;
 int pause = 0;
-int REFRESH_TIMER = 380;
+int REFRESH_TIMER = 200;
 
 /* you may have to change the include to <glut.h> or
 elsewhere depending on where it is stored on your system */
@@ -705,7 +705,7 @@ void myinit()
 }
 void display()
 {
-	int i, j, Three, Two, Num;
+	int i, j, k, Three, Two, One, Num[3];
 	char ch;
 	FILE *mapp = NULL;
 	glClear(GL_COLOR_BUFFER_BIT);  /*clear the window */
@@ -773,78 +773,41 @@ void display()
 			for (i = 0; i < WIN_WIDTH; i += 1)
 				if (map[j][i] == '+')
 					DrawBrick(i, j, 1);
-		Three = score / 100;
-		Two = (score % 100) / 10;
 
-		if (Three == 0)	mapp = fopen("0.txt", "r");
-		else if (Three == 1)	mapp = fopen("1.txt", "r");
-		else if (Three == 2)	mapp = fopen("2.txt", "r");
-		else if (Three == 3)	mapp = fopen("3.txt", "r");
-		else if (Three == 4)	mapp = fopen("4.txt", "r");
-		else if (Three == 5)	mapp = fopen("5.txt", "r");
-		else if (Three == 6)	mapp = fopen("6.txt", "r");
-		else if (Three == 7)	mapp = fopen("7.txt", "r");
-		else if (Three == 8)	mapp = fopen("8.txt", "r");
-		else if (Three == 9)	mapp = fopen("9.txt", "r");
-		if (mapp == NULL)
+		//---------------------------
+		Num[0] = score / 100;
+		Num[1] = (score % 100) / 10;
+		Num[2] = score % 10;
+
+		for (k = 0; k < 3; k++)
 		{
-			printf("File open error!!\n");
-			system("PAUSE");
-			exit(1);
-		}
-		for (j = 4; j >= 0; j -= 1.0) {
-			for (i = 0; i < 4; i += 1.0) {
-				if ((ch = fgetc(mapp)) != EOF) {
-					if (ch == '+')
-						DrawBrick(i + 28.0, j + 2.0, 2);
-				}
+			if (Num[k] == 0)	mapp = fopen("0.txt", "r");
+			else if (Num[k] == 1)	mapp = fopen("1.txt", "r");
+			else if (Num[k] == 2)	mapp = fopen("2.txt", "r");
+			else if (Num[k] == 3)	mapp = fopen("3.txt", "r");
+			else if (Num[k] == 4)	mapp = fopen("4.txt", "r");
+			else if (Num[k] == 5)	mapp = fopen("5.txt", "r");
+			else if (Num[k] == 6)	mapp = fopen("6.txt", "r");
+			else if (Num[k] == 7)	mapp = fopen("7.txt", "r");
+			else if (Num[k] == 8)	mapp = fopen("8.txt", "r");
+			else if (Num[k] == 9)	mapp = fopen("9.txt", "r");
+			if (mapp == NULL)
+			{
+				printf("File open error!!\n");
+				system("PAUSE");
+				exit(1);
 			}
-			ch = fgetc(mapp);//change line
-		}
-		fclose(mapp);
-		if (Two == 0)	mapp = fopen("0.txt", "r");
-		else if (Two == 1)	mapp = fopen("1.txt", "r");
-		else if (Two == 2)	mapp = fopen("2.txt", "r");
-		else if (Two == 3)	mapp = fopen("3.txt", "r");
-		else if (Two == 4)	mapp = fopen("4.txt", "r");
-		else if (Two == 5)	mapp = fopen("5.txt", "r");
-		else if (Two == 6)	mapp = fopen("6.txt", "r");
-		else if (Two == 7)	mapp = fopen("7.txt", "r");
-		else if (Two == 8)	mapp = fopen("8.txt", "r");
-		else if (Two == 9)	mapp = fopen("9.txt", "r");
-		if (mapp == NULL)
-		{
-			printf("File open error!!\n");
-			system("PAUSE");
-			exit(1);
-		}
-		for (j = 4; j >= 0; j -= 1.0) {
-			for (i = 0; i < 4; i += 1.0) {
-				if ((ch = fgetc(mapp)) != EOF) {
-					if (ch == '+')
-						DrawBrick(i + 33.0, j + 2.0, 2);
+			for (j = 4; j >= 0; j -= 1.0) {
+				for (i = 0; i < 4; i += 1.0) {
+					if ((ch = fgetc(mapp)) != EOF) {
+						if (ch == '+')
+							DrawBrick(i + 28.0 + (k*5.0), j + 2.0, 2);
+					}
 				}
+				ch = fgetc(mapp);//change line
 			}
-			ch = fgetc(mapp);//change line
+			fclose(mapp);
 		}
-		fclose(mapp);
-		mapp = fopen("0.txt", "r");
-		if (mapp == NULL)
-		{
-			printf("File open error!!\n");
-			system("PAUSE");
-			exit(1);
-		}
-		for (j = 4; j >= 0; j -= 1.0) {
-			for (i = 0; i < 4; i += 1.0) {
-				if ((ch = fgetc(mapp)) != EOF) {
-					if (ch == '+')
-						DrawBrick(i + 38.0, j + 2.0, 2);
-				}
-			}
-			ch = fgetc(mapp);//change line
-		}
-		fclose(mapp);
 	}
 	glFlush(); /* clear buffers */
 	glutSwapBuffers();
